@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8cc63e"
+    tools:context="preamped.empirestate.co.za.preamped.loadshedding.MapsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/toplay"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imgTop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:id="@+id/mdLay"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imgTop"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

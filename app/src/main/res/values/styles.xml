@@ -1,0 +1,422 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTitleStyle">@style/actionBarStyle</item>
+        <item name="colorPrimary">#ff8cc63e</item>
+        <item name="colorPrimaryDark">#ff8cc63e</item>
+        <item name="colorAccent">#ff8cc63e</item>
+        <item name="android:logo">@drawable/acc</item>
+        <item name="android:selectableItemBackground">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="searchResultsList" parent="@android:style/Widget.ListView">
+        <item name="android:divider">@android:color/black</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+    <!-- Local copy of android:DialogWindowTitle.Holo -->
+    <style name="DescriptionBar">
+        <item name="android:background">#fb3</item>
+        <item name="android:paddingTop">@dimen/margin_medium</item>
+        <item name="android:paddingBottom">@dimen/margin_medium</item>
+        <item name="android:paddingLeft">@dimen/page_margin</item>
+        <item name="android:paddingRight">@dimen/page_margin</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="mgStyle">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Pager">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="actionBarStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="Title1TextStyleGreen" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Title1TextStyleGrey" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Title1TextStyleBlack" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Title1TextStyleRed" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/maroon</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Title2TextStyleGrey" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/grey2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Title3TextStyleGrey" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/grey2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="SmallTextGrey" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/grey2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+    <style name="Title2TextStyleBlack" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Title3TextStyleBlack" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Title3TextStyleGreen" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Title3TextStyleRed" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/translucent_red</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Title2TextStyleGreen" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+
+
+    <style name="Theme.Styled" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">@drawable/selectable_background</item>
+        <item name="actionBarTabStyle">@style/Widget.Styled.ActionBar.TabView</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="actionDropDownStyle">@style/Widget.Styled.Spinner.DropDown.ActionBar</item>
+        <item name="dropDownListViewStyle">@style/Widget.Styled.ListView.DropDown</item>
+        <item name="popupMenuStyle">@style/Widget.Styled.PopupMenu</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_styled</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_styled</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_styled</item>
+        <item name="progressBarStyle">@style/Widget.Styled.ProgressBar.Horizontal</item>
+    </style>
+
+
+    <!--
+        For the following styles, the attributes are available in the android namespace which
+        means that we can set them here for all platforms (v7 through to the latest).
+    -->
+
+    <style name="Widget.Styled.ActionBar.TabView"
+        parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab</item>
+    </style>
+
+    <style name="Widget.Styled.Spinner.DropDown.ActionBar"
+        parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_styled</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background</item>
+    </style>
+
+    <style name="Widget.Styled.ProgressBar.Horizontal"
+        parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+    </style>
+
+    <style name="Widget.Styled.PopupMenu" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_styled</item>
+    </style>
+
+    <style name="Widget.Styled.ListView.DropDown"
+        parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background</item>
+    </style>
+
+
+    <style name="TextStyleGreen" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextStyleGreenSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextStyleNavyBlue" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#ff8cc63e</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BlueCircleSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/xblue_oval_smaller</item>
+    </style>
+
+
+    <style name="TextStyleGrey" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <dimen name="com_facebook_likeview_text_size">11.0sp</dimen>
+    <color name="com_facebook_likeview_text_color">#6a7180</color>
+    <dimen name="com_facebook_likeview_edge_padding">2dp</dimen>
+    <dimen name="com_facebook_likeview_internal_padding">6dp</dimen>
+
+    <dimen name="com_facebook_likeboxcountview_caret_width">6dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_caret_height">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
+    <dimen name="com_facebook_likeboxcountview_border_width">1dp</dimen>
+    <color name="com_facebook_likeboxcountview_border_color">#6a7180</color>
+    <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
+    <dimen name="com_facebook_likeboxcountview_text_size">11.0sp</dimen>
+    <dimen name="com_facebook_likeboxcountview_text_padding">6dp</dimen>
+
+    <dimen name="com_facebook_profilepictureview_preset_size_small">50dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_normal">100dp</dimen>
+    <dimen name="com_facebook_profilepictureview_preset_size_large">180dp</dimen>
+
+    <dimen name="com_facebook_share_button_compound_drawable_padding">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_bottom">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_left">12dp</dimen>
+    <dimen name="com_facebook_share_button_padding_right">16dp</dimen>
+    <dimen name="com_facebook_share_button_padding_top">12dp</dimen>
+    <color name="com_facebook_share_button_text_color">#FFFFFF</color>
+    <dimen name="com_facebook_share_button_text_size">16.0sp</dimen>
+
+    <dimen name="com_facebook_tooltip_horizontal_padding">10dp</dimen>
+
+    <style name="tooltip_bubble_text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.25</item>
+        <item name="android:shadowColor">#40000000</item>
+    </style>
+
+    <color name="com_facebook_button_background_color">#415dae</color>
+    <color name="com_facebook_button_background_color_disabled">#bdc1c9</color>
+    <color name="com_facebook_button_background_color_pressed">#2f477a</color>
+    <color name="com_facebook_button_like_background_color_selected">#7c8fc8</color>
+    <color name="com_facebook_button_login_silver_background_color">#f4f6f8</color>
+    <color name="com_facebook_button_login_silver_background_color_pressed">#e9eaf0</color>
+    <color name="com_facebook_button_send_background_color">#0084ff</color>
+    <color name="com_facebook_button_send_background_color_pressed">#006fff</color>
+
+    <style name="com_facebook_button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/com_facebook_button_background</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14.0dp</item>
+    </style>
+
+    <style name="com_facebook_button_like" parent="com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_like_background</item>
+    </style>
+
+    <style name="com_facebook_loginview_default_style" parent="com_facebook_button">
+        <item name="android:drawableLeft">@drawable/com_facebook_button_icon</item>
+    </style>
+
+    <style name="com_facebook_loginview_silver_style" parent="com_facebook_loginview_default_style">
+        <item name="android:background">@drawable/com_facebook_button_login_silver_background</item>
+        <item name="android:drawableLeft">@null</item>
+        <item name="android:textColor">#4b5164</item>
+    </style>
+
+    <style name="com_facebook_button_send" parent="com_facebook_button">
+        <item name="android:background">@drawable/com_facebook_button_send_background</item>
+        <item name="android:drawableLeft">@drawable/com_facebook_button_send_icon</item>
+        <item name="android:text">@string/com_facebook_send_button_text</item>
+    </style>
+
+    <style name="com_facebook_button_share" parent="com_facebook_button">
+        <item name="android:drawableLeft">@drawable/com_facebook_button_icon</item>
+        <item name="android:text">@string/com_facebook_share_button_text</item>
+    </style>
+
+    <style name="TextStyleGreySmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MediumTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="MediumTextStyleBold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TextStyle20" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextStyleRed" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/translucent_red</item>
+    </style>
+
+    <style name="TextStyleRedSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/xblue_oval_smaller</item>
+        <item name="android:textColor">@color/translucent_red</item>
+    </style>
+
+
+    <style name="StyleRedSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/xsmall_red_ball</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="StyleGreenSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/xsmall_green</item>
+        <item name="android:textColor">@color/translucent_red</item>
+    </style>
+
+    <style name="StyleAmbSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/xsmall_amber</item>
+        <item name="android:textColor">@color/translucent_red</item>
+    </style>
+
+    <style name="TextStyleSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextStyleBold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:color">@color/black</item>
+    </style>
+    <style name="RedCircleSmall" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/xsmall_red_ball</item>
+    </style>
+    <style name="AmbCircleSmall" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/xsmall_amber</item>
+    </style>
+    <style name="GreenCircleSmall" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/xsmall_green</item>
+    </style>
+    <style name="WhiteCircleSmall" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/xwhiteoval</item>
+    </style>
+    <style name="GreenDotSmall" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/dot_green</item>
+    </style>
+    <style name="WhiteSmall" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/xwhite_small</item>
+    </style>
+    <style name="RedDotSmall" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/dot_red</item>
+    </style>
+
+    <style name="TextStyleBoldSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Transparent" parent="android:Theme.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <color name="transparent">#00000000</color>
+
+
+</resources>

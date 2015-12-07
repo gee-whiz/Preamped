@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/fLoooc"
+        android:padding="5dp"
+        android:background="@drawable/xrounded"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/txtClocation"
+            android:text="marshal town"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:textColor="@color/preamped_green"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/hori"
+            android:background="@color/preamped_green"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp">
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtSta"
+                android:layout_below="@+id/hori"
+                android:text="STAGE"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/material_blue_grey_800"
+
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/txtSta"
+            android:text="TIME END"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/material_blue_grey_800"
+
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtCstage"
+            android:background="@drawable/xxxborder"
+            android:layout_below="@+id/hori"
+            android:text=""
+
+         android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="@color/preamped_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtCTend"
+            android:layout_below="@+id/txtCstage"
+            android:text="N/A"
+            android:background="@drawable/xxxborder"
+       android:layout_marginLeft="150dp"
+           android:layout_centerVertical="true"
+
+         android:textColor="@color/preamped_green"
+          android:layout_marginTop="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/preamped_green"
+                android:text="CLOSE"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/xround"
+                android:id="@+id/btnClose"
+                android:layout_width="300dp"
+                android:layout_height="40dp" />
+            </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

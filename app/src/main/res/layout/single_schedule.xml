@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+
+
+
+<RelativeLayout
+android:id="@+id/ssl"
+
+    android:layout_marginLeft="2dp"
+    android:elevation="20dp"
+    android:padding="10dp"
+
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginTop="3dp"
+       android:textColor="@color/black"
+        android:text="Time:"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:id="@+id/txtStages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  <TextView
+      android:id="@+id/txtTime"
+      style="@style/Base.TextAppearance.AppCompat.Subhead"
+     android:layout_marginTop="3dp"
+      android:textColor="@color/material_blue_grey_800"
+      android:layout_marginLeft="100dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/black"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_below="@+id/txtStages"
+
+        android:text="Date:"
+        android:id="@+id/txtGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_below="@+id/txtGroup"
+        android:paddingRight="32dp"
+      android:layout_marginLeft="100dp"
+
+        android:textColor="@color/material_blue_grey_800"
+        android:id="@+id/txtStage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <TextView
+        android:textColor="@color/black"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:text="Stage:"
+        android:layout_below="@+id/txtGroup"
+
+        android:id="@+id/txtStartss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_marginLeft="100dp"
+       android:layout_below="@id/txtTime"
+        android:textColor="@color/material_blue_grey_800"
+
+        android:id="@+id/txtDates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+
+
+</LinearLayout>

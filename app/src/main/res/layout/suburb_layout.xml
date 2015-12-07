@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+
+        android:layout_marginTop="10dp"
+       android:elevation="50dp"
+        android:id="@+id/tosurb"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+     android:id="@+id/txtsorry"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:text="Sorry we couldn't automatically locate you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <AutoCompleteTextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtsorry"
+         android:paddingLeft="10dp"
+            android:inputType="textCapSentences"
+            android:id="@+id/edtSuburb"
+            android:hint="Please Enter your suburb"
+            android:background="@drawable/xxxborder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+
+
+
+
+       <Button
+           android:textColor="@color/white"
+           android:layout_marginTop="10dp"
+           android:layout_weight="1"
+          android:background="@drawable/xxxtrans"
+           android:layout_below="@+id/edtSuburb"
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:text="SAVE"
+           android:id="@+id/btnsurSave"    />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

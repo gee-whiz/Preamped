@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="preamped.empirestate.co.za.preamped.WelcomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/Logs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:alpha="5"
+        android:id="@+id/imgSplash"
+        android:scaleType="fitXY"
+        android:src="@drawable/pb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+<TextView
+    android:textColor="@color/white"
+    android:layout_marginBottom="135dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/txtPower"
+    android:text="Power up"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:padding="-2dp"
+        android:layout_above="@+id/btnLay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <Button
+      android:background="@drawable/xborder"
+            android:id="@+id/log_btn"
+            android:textColor="@color/white"
+            android:text="Login"
+            android:layout_weight="2"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:background="@drawable/xborder"
+            android:id="@+id/reg_btn"
+            android:textColor="@color/white"
+            android:text="Register"
+            android:layout_weight="2"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+  android:padding="-2dp"
+    android:layout_marginBottom="0dp"
+        android:id="@+id/btnLay"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:textColor="@color/white"
+            android:background="@drawable/xborder"
+           android:layout_weight="2"
+
+           android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+          android:background="@drawable/xborder"
+            android:id="@+id/reg_cancel"
+            android:textColor="@color/white"
+            android:text="Exit"
+            android:layout_weight="2"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/regLayout">
+        <include layout="@layout/login_social"/>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/logLayout">
+        <include layout="@layout/login_load"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadlogLay">
+        <include layout="@layout/login_load"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+

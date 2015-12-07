@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/btnLay"
+        android:background="#CC8cc63e"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+        </RelativeLayout>
+    <Button
+        android:id="@+id/bPlus"
+        android:background="#80FFFFFF"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <TextView
+
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="ADD LOCATION"
+    android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:tint="#ff8cc63e"
+        android:id="@+id/btnPlus"
+        android:src="@drawable/ic_plus"
+
+        android:layout_marginRight="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/xwhiteoval"
+ android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+
+
+
+    <RelativeLayout
+
+   android:layout_below="@+id/btnLay"
+        android:id="@+id/topFav"
+        android:layout_width="match_parent"
+        android:layout_height="520dp">
+        <ListView
+            android:listSelector="#80FFFFFF"
+             android:divider="#80FFFFFF"
+
+            android:dividerHeight="1dp"
+            android:stackFromBottom="true"
+            android:id="@+id/lstLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

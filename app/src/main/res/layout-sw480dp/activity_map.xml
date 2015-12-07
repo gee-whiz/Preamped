@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+   <RelativeLayout
+       android:id="@+id/topLoyout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/uptownmap"
+        android:background="#CC8cc63e"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/btnAuto"
+            android:layout_marginRight="22dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_autorenew_white_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtEnds"
+            android:layout_centerVertical="true"
+            android:text=""
+           android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="240dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/txtTimeTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtStage"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="210dp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/topLay"
+        android:id="@+id/mapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.gms.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:visibility="gone"
+            android:padding="16dp"
+            android:layout_marginTop="70dp"
+            android:id="@+id/locSaveLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/user_location"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/appExit"
+            android:padding="16dp"
+            android:layout_marginTop="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/exit_layout"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="16dp"
+            android:layout_marginTop="80dp"
+            android:visibility="gone"
+            android:id="@+id/loclays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/user_loc"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/Qlays"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/question_layout"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/favlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/fav_layout"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+
+            android:visibility="gone"
+            android:id="@+id/conFirmdeletelay"
+            android:padding="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/confirm_location_delete"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:visibility="gone"
+            android:id="@+id/outLay"
+            android:padding="16dp"
+            android:layout_marginTop="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/no_notification"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:visibility="gone"
+            android:id="@+id/singleloc"
+            android:padding="16dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/single_location"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/pointloc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/point_of_interest"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:visibility="gone"
+            android:id="@+id/preLay"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/preloyout"/>
+        </RelativeLayout>
+
+        <ImageButton
+            android:background="@drawable/xsmall_green"
+            android:id="@+id/btndown"
+            android:layout_width="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_chevron_down"
+            />
+
+        <ImageButton
+            android:visibility="gone"
+            android:background="@drawable/xsmall_green"
+            android:id="@+id/btnup"
+           android:layout_marginTop="530dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_chevron_up"/>
+
+
+    <LinearLayout
+       android:layout_alignParentBottom="true"
+
+        android:id="@+id/tbW"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TabWidget
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/btnMap"
+                android:background="@color/white"
+                android:layout_weight="2"
+               android:src="@drawable/maps_green"
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+
+            <ImageView
+                android:id="@+id/btnPower"
+              android:background="@color/white"
+                android:layout_weight="2"
+                android:src="@drawable/power_green"
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+            <ImageView
+                android:background="@color/white"
+                android:layout_weight="2"
+
+              android:id="@+id/btnPreamped"
+                android:src="@drawable/pre_green"
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+
+        </TabWidget>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

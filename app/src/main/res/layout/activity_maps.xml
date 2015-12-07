@@ -1,0 +1,29 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map"
+    tools:context="preamped.empirestate.co.za.preamped.loadshedding.MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+    <RelativeLayout
+       android:visibility="gone"
+        android:padding="16dp"
+        android:layout_marginTop="200dp"
+        android:id="@+id/locSaveLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/user_location"/>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+
+        android:background="@color/transluscent_green"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:src="@drawable/pre_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="SAVE YOUR LOCATION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+        <AutoCompleteTextView
+            android:inputType="textCapSentences"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txtOr"
+            android:gravity="center"
+            android:hint="Street Address"
+            android:id="@+id/edtStreetaddress"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <AutoCompleteTextView
+            android:inputType="textCapSentences"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/edtStreetaddress"
+            android:gravity="center"
+            android:hint="Suburb"
+            android:id="@+id/edtCity"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <AutoCompleteTextView
+            android:textEditSuggestionItemLayout="@anim/abc_slide_out_top"
+            android:inputType="textCapSentences"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/edtCity"
+            android:gravity="center"
+            android:hint="Province"
+            android:id="@+id/edtProvince"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <ProgressBar
+            android:background="@color/preamped_green"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

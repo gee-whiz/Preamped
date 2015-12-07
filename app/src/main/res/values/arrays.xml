@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_ofcities">
+        <item>Limpopo</item>
+        <item>North Wes</item>
+        <item>Eastern cape</item>
+        <item>Free state</item>
+        <item>Gauteng</item>
+        <item>Western Cape</item>
+        <item>Kwazulu Natal</item>
+
+        <item>Limpopo</item>
+        <item>North Wes</item>
+        <item>Eastern cape</item>
+        <item>Free state</item>
+        <item>Gauteng</item>
+        <item>Western Cape</item>
+        <item>Kwazulu Natal</item>
+
+        <item>Limpopo</item>
+        <item>North Wes</item>
+        <item>Eastern cape</item>
+        <item>Free state</item>
+        <item>Gauteng</item>
+        <item>Western Cape</item>
+        <item>Kwazulu Natal</item>
+        <item>Limpopo</item>
+        <item>North Wes</item>
+        <item>Eastern cape</item>
+        <item>Free state</item>
+        <item>Gauteng</item>
+        <item>Western Cape</item>
+        <item>Kwazulu Natal</item>
+
+    </string-array>
+    <string-array name="list_ofProvinces">
+        <item>Gauteng</item>
+        <item>Western Cape</item>
+        <item>Kwazulu Natal</item>
+    </string-array>
+</resources>

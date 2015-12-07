@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+
+        android:background="@color/transluscent_green"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/sorry"
+            android:layout_centerHorizontal="true"
+            android:text="Sorry we couldn't automatically locate you."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="Please enter your suburb."
+            android:layout_below="@+id/sorry"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <AutoCompleteTextView
+
+            android:inputType="textCapSentences"
+            android:gravity="center"
+            android:hint="Please Enter Suburb"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtNewSuburb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

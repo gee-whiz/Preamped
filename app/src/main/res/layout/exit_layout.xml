@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="#80ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:tint="#ff8cc63e"
+            android:id="@+id/imgLogo"
+            android:src="@drawable/splash_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <ImageButton
+            android:id="@+id/btnnNo"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/abc_ic_clear_mtrl_alpha"
+            android:tint="@color/absa_red"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="@string/exit_question"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/white"
+            android:background="#ff8cc63e"
+            android:layout_weight="2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Yes"
+            android:textStyle="bold"
+            android:id="@+id/btnsYes" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

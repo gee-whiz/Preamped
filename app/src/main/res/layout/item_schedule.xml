@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+
+  >
+
+
+    <LinearLayout android:id="@+id/primary_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        android:background="@color/white">
+
+        <TextView style="?android:textAppearanceListItemSmall"
+            android:id="@+id/txttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22:04:15 - 01:03:34 "
+             />
+
+        <TextView style="?android:textAppearanceSmall"
+            android:id="@+id/txtDates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22-06-2015"
+           />
+
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/txtStage"
+        style="@style/GreenCircleSmall"
+        android:text="2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        />
+    <!--
+        When using the Holo theme, setting a Button or ImageButton to
+        ?android:borderlessButtonStyle removes its border and sets the
+        background to ?android:selectableItemBackground, as described above.
+    -->
+
+
+</LinearLayout>

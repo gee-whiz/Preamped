@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="preamped.empirestate.co.za.preamped.Login_social">
+    <RelativeLayout
+        android:id="@+id/topLay"
+        android:background="#ff8cc63e"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="WELCOME"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/blue_dark2"
+        android:id="@+id/upLy"
+        android:layout_below="@+id/topLay"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </RelativeLayout>
+
+    <EditText
+        android:backgroundTint="#ff8cc63e"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email_address"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/upLy"
+        android:hint="EMAIL-ADDRESS"
+        android:gravity="center" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+       android:gravity="center"
+        android:hint="PASSWORD"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/email_address"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="LOGIN"
+            android:background="@color/blue_dark2"
+            android:id="@+id/logs_btn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

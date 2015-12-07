@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="preamped.empirestate.co.za.preamped.Login_social">
+    <RelativeLayout
+        android:id="@+id/topLay"
+        android:background="#ff8cc63e"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <TextView
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="REGISTER"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+
+        <ProgressBar
+            android:visibility="gone"
+
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarreg"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+         />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/blue_dark2"
+        android:id="@+id/upLy"
+        android:layout_below="@+id/topLay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:inputType="textCapSentences"
+        android:gravity="center"
+        android:cursorVisible="true"
+       android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:ems="10"
+        android:id="@+id/edtFirstName"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/upLy"
+        android:hint="FIRST NAME"
+         />
+
+    <EditText
+     android:inputType="textCapSentences"
+        android:backgroundTint="#ff8cc63e"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="LAST NAME"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtFirstName"
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
+    <EditText
+
+        android:layout_marginTop="10dp"
+       android:gravity="center"
+        android:hint="E-MAIL ADDRESS"
+      android:theme="@style/Base.Widget.AppCompat.EditText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtLastName"
+        android:id="@+id/edtEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp" />
+    <EditText
+        android:backgroundTint="#ff8cc63e"
+        android:layout_marginTop="10dp"
+       android:gravity="center"
+        android:hint="PHONE NUMBER"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtEmail"
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
+    <EditText
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:backgroundTint="#ff8cc63e"
+        android:layout_marginTop="10dp"
+        android:hint="PASSWORD"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtPhone"
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="REGISTER"
+            android:background="@color/blue_dark2"
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

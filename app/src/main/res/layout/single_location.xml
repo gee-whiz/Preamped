@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#CC8cc63e"
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+            <TextView
+                android:paddingLeft="16dp"
+         android:layout_centerVertical="true"
+                android:id="@+id/txtLoca"
+                android:textStyle="bold"
+                android:text=""
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+           android:layout_marginLeft="220dp"
+                android:text=""
+
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:id="@+id/txtStage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/white"
+
+                 android:layout_marginLeft="220dp"
+                android:text=""
+                android:id="@+id/txtTimeEnd"
+                android:layout_below="@+id/txtLoca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageButton
+            android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/imgHome"
+                android:layout_alignParentRight="true"
+                android:tint="#ff8cc63e"
+                android:background="@drawable/xwhiteoval"
+                android:src="@drawable/ic_grade_white_24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        <LinearLayout
+            android:paddingRight="15dp"
+         android:layout_centerVertical="true"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+               android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                style="@style/GreenCircleSmall"
+                android:layout_alignParentRight="true"
+                android:text="+"
+                android:id="@+id/txtPlus"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

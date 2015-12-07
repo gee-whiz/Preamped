@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:background="@drawable/xborderless"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:src="@drawable/splash_logo"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:id="@+id/mText"
+            android:text="Marker name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:scrollbarSize="20dp"
+            android:textColor="@color/absa_red"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Marker text"
+            android:id="@+id/mName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
